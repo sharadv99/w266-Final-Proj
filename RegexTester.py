@@ -117,12 +117,12 @@ class PunctuationRemovalRegex(unittest.TestCase):
         expected = "<s> There were <digit> Number of  looming in the distance?!."
         self.assertEqual(expected, re.sub(self.pattern, self.replace, text)) 
     def test_french(self):
-        text = "Her name was Reneé"
-        expected = "Her name was Reneé"
+        text = "Her name was Renée"
+        expected = "Her name was Renée"
         self.assertEqual(expected, re.sub(self.pattern, self.replace, text)) 
     def test_underscore(self):
-        text = "Her name was _Reneé"
-        expected = "Her name was _Reneé"
+        text = "Her name was _Renée"
+        expected = "Her name was _Renée"
         self.assertEqual(expected, re.sub(self.pattern, self.replace, text)) #Should we remove underscores?
             
 if __name__ == '__main__':
