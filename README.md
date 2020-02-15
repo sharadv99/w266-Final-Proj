@@ -12,4 +12,30 @@ We performed multi-label, multi-class movie genre classification on plot summari
 
 For a full overview of the project, as well as details on the motivation, technical design/methods, model performance, and next steps, please see our [full research report](https://github.com/sharadv99/w266-Multi-Label-Genre-Classification/blob/master/Multi-Label%20Movie%20Genre%20Classification%20from%20Plot%20Summaries.pdf).
 
+Tech Stack/Methods
+-------------
+
+- Python
+- Tensorflow/Keras
+- NLTK
+- Bag-of-Words modeling (BoW)
+- TFIDF
+- Word Embeddings
+- Universal Sentence Encoder
+- Hierarchical Attention Networks
+- Deep Learning/Neural Networks
+- Ensemble Methods
+- Multi-Label Classification
+- Custom Sampling
+
+Key Files
+-----------
+
+- **`EDA and Model Building.ipynb`**: In this file we read in training/test data (`train_genres.txt`, `test_genres.txt`, `train_plots.txt`, `test_plots.txt`), conduct major data pre-processing and exploratory data analysis, train/evaluate different variants of our hierarchical attention network, and perform error analysis.
+- **`Analysis2_Univ_Sent_Encoder.ipynb`**: Archived file where we first introduced the universal sentence encoder to our models
+- **`Neural_BOW_Model.ipynb`**: This file introduces the custom sampling methods we explored for our imbalanced, multi-label data. Additionally it houses the training/evaluation of our different bag-of-word models (including homogenous ensembles).
+- **`Files with .h5 extension`**: These files represent various trained deep learning models for our project, which we saved so as to prevent the need for re-training if any evaluation was needed in future sessions.
+- **`Multi-Label Movie Genre Classification from Plot Summaries.pdf`**: Final research report with full scope/analysis/results.
+
+
 
